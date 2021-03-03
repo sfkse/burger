@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="image/hamburger.svg" alt="">
+        <hr>
+
+        <div class="form">
+            <h1><b>Create a burger!</b></h1>
+            <form action="">
+                <div class="input-wrap">
+                    <label for="protein">What type of protein would you like?</label>
+                    <input type="text" name="protein-type" id="protein">
+                </div>
+                <div class="input-wrap">
+                    <label for="patties">How many patties would you like?</label>
+                    <input type="number" name="patties-quantity" id="patties">
+                </div>
+                <div class="input-wrap">
+                    <label for="cook">How do you want your patty cooked</label><br>
+                    <span>Rare</span>
+                    <input type="range" min="0" max="50" value="25" class="slider" id="cook">
+                    <span>Well-Done</span>
+                </div>
+                <div class="input-wrap">
+                    <label for="toppings">What toppings would you like?</label><br>
+                    <input type="checkbox" name="toppings" id="toppings"><span>Lettuce</span>
+                    <input type="checkbox" name="toppings" id="toppings"><span>Tomato </span>
+                    <input type="checkbox" name="toppings" id="toppings"><span>Onion </span>
+                </div>
+                <div class="input-wrap">
+                    <label for="cheese">Would you like to add cheese?</label><br>
+                    <input type="radio" name="cheese" id="cheese"><span>Yes</span>
+                    <input type="radio" name="cheese" id="cheese"><span>No </span>
+
+                </div>
+                <div class="input-wrap">
+                    <label for="bun">What type of bun would you like?</label>
+                    <select name="bun" id="bun">
+                        <option value="">Sesame</option>
+                        <option value="">Potato</option>
+                        <option value="">Pretzel</option>
+                    </select>
+
+                </div>
+                <div class="input-wrap">
+                    <label for="sauce">What type of sauce would you like?</label>
+                    <input list="sauces" name="sauce" id="sauce">
+                    <datalist id="sauces">
+                        <option value="ketchup"></option>
+                        <option value="mayo"></option>
+                        <option value="mustard"></option>
+                    </datalist>
+
+                </div>
+                <div class="input-wrap">
+                    <label for="else">Anything else you want to add?</label><br>
+                    <textarea name="else" id="else" cols="40" rows="3"></textarea>
+
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
